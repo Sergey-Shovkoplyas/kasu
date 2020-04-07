@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="stylesnew/styles.css">
 
   <link rel="stylesheet" href="stylesnew/swiper.min.css">
+  <link rel="stylesheet" href="stylesnew/animate.css">
   <link rel="stylesheet" href="stylesnew/kasu-styles.min.css">
 </head>
 
@@ -72,7 +73,7 @@
 
   <div class="wt-view wt-view-secondary" data-controller="homeController" id="view-main">
     <div class="wt-content" role="main">
-      <section class="wt-secondary">
+      <section class="wt-secondary kasu">
         <div class="wt-hero-particle">
           <div class="wt-particle">
             <div class="wt-particle-item -v1">
@@ -157,6 +158,45 @@
               <div class="kasu__calc">
                 <div class="kasu-title kasu__calc-title">Get sponsored monthly</div>
                 <div class="kasu__calc-subtitle">Reward loyal fans with access to your most exclusive content.</div>
+
+                <div class="kasu__calc-item">
+                  <div class="kasu__calc-head">
+                    <div class="kasu__calc-name">Monthly sponsorship</div>
+                    <div class="kasu__calc-value">$7</div>
+                  </div>
+                  <div class="kasu__calc-line">
+                    <div class="kasu__calc-grab"></div>
+                    <div class="kasu__calc-line-colored"></div>
+                  </div>
+                  <div class="kasu__calc-limits">
+                    <span>0</span>
+                    <span>$50</span>
+                  </div>
+                </div>
+
+                <div class="kasu__calc-item">
+                  <div class="kasu__calc-head">
+                    <div class="kasu__calc-name">Number of followers</div>
+                    <div class="kasu__calc-value">700</div>
+                  </div>
+                  <div class="kasu__calc-line">
+                    <div class="kasu__calc-grab"></div>
+                    <div class="kasu__calc-line-colored"></div>
+                  </div>
+                  <div class="kasu__calc-limits">
+                    <span>100</span>
+                    <span>50k</span>
+                  </div>
+                </div>
+
+                <div class="kasu__calc-result">
+                  <div class="kasu__calc-result-head">You could be earning</div>
+                  <div class="kasu__calc-result-value">$4,400</div>
+                  <div class="kasu__calc-result-text">per month <a href="#"></a></div>
+                </div>
+
+                <button class="kasu-button" type="button">Get started</button>
+
               </div>
 
               <div class="kasu__community">
@@ -228,8 +268,46 @@
                 </div>
               </div>
 
-              <div class="kasu__far">
-                <div class="kasu__far__title">Successes so far</div>
+              <div class="kasu__far kasu-line-top">
+                <div class="kasu-title kasu__far-title">Successes so far</div>
+                <div class="kasu__far-container clearfix">
+
+                  <div class="kasu__far-item kasu__far-item--1">
+                    <div class="kasu__far-number">$150k +</div>
+                    <div class="kasu__far--text">earned by independent influencers across the globe since 2019</div>
+                  </div>
+
+                  <div class="kasu__far-item kasu__far-item--2">
+                    <div class="kasu__far-number">200+</div>
+                    <div class="kasu__far-text">influencers used their link to connect their content and earn sponsorships</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="kasu__featured kasu-line-top">
+                <div class="kasu-title kasu__featured-title">As featured in</div>
+                <div class="kasu__featured-img">
+                  <img src="images/featured.png" alt="kasu">
+                </div>
+                <div class="kasu__featured-btn">
+                  <button class="kasu-button" type="button">Claim yours</button>
+                </div>
+              </div>
+
+              <div class="kasu__logo-bottom">
+                <img src="images/logo.svg" alt="kasu">
+              </div>  
+
+              <div class="kasu__footer">
+                <div class="kasu__footer-container">
+                  <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                  </ul>
+                  <div class="kasu__footer-copy">2020 © Kasu.io. All rights reserved.</div>
+                </div>
               </div>
               
 
@@ -251,23 +329,7 @@
         </div>
       </section>
 
-      <footer>
-        <ul>
-          <li data-magnetic data-cursor="-normal">
-            <a href="terms" class="link">Terms of service</a>
-          </li>
-          <li data-magnetic data-cursor="-normal">
-            <a href="privacy" class="link">Privacy Policy</a>
-          </li>
-          <li data-magnetic data-cursor="-normal">
-            <a href="abuse" class="link">Report abuse</a>
-          </li>
-          <li data-magnetic data-cursor="-normal">
-            <a href="contact" class="link">Contact</a>
-          </li>
-        </ul>
-        <p>© Copyright 2020 Kasu.<br>All rights reserved.</p>
-      </footer>
+
 
       <section class="wt-contact">
         <div class="wt-hero-particle">
@@ -323,6 +385,7 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
   <script src="js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/kasu-script.js"></script>
 
   <script src="js/h.js" defer></script>

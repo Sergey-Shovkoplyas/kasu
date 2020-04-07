@@ -4,10 +4,24 @@ html.kasu,
 body.kasu 
   overflow-x: hidden !important
 
+
+.clearfix:before,
+.clearfix:after 
+  content: ""
+  display: table
+  clear: both
+
+
 .kasu.wt-secondary-container 
   max-width: 100%
   margin: 0
   padding: 0
+
+.kasu.wt-secondary
+  padding-bottom: 0
+
+.kasu.wt-secondary:before
+  bottom: 0
 
 .kasu-top-wrap
   max-width: 526px
@@ -56,7 +70,7 @@ body.kasu
 .kasu__features 
   margin-top: 144px
   padding-top: 40px
-  margin-bottom: 190px
+  margin-bottom: 120px
   font-weight: 500
   line-height: 1.77
   +media-sm 
@@ -68,7 +82,6 @@ body.kasu
 
 .kasu__features-container 
   position: relative
-  outline: 1px solid red
   max-width: 1115px
   padding: 0 15px
   margin: 0 auto
@@ -130,13 +143,131 @@ body.kasu
 // ------------------------------- .kasu__calc  -------------------------------------
 
 .kasu__calc 
-  min-height: 708px
   max-width: 710px
   margin: 0 auto
   margin-bottom: 120px
   padding: 70px 70px 60px 
   border: 1px solid #E7E7E7
   border-radius: 16px
+  +media-sm 
+    padding: 0 28px
+    border: none
+    margin-bottom: 80px
+
+.kasu__calc-title
+  margin-bottom: 20px
+  +media-sm 
+    font-size: 26px
+    font-weight: 600
+    margin-bottom: 10px
+
+.kasu__calc-subtitle
+  font-weight: 500
+  margin-bottom: 35px
+  +media-sm 
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: 0.2px
+    margin-bottom: 20px
+
+.kasu__calc-head 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 15px
+  +media-sm 
+    font-size: 16px
+
+.kasu__calc-name 
+  line-height: 48px
+
+.kasu__calc-value
+  width: 108px
+  height: 38px
+  padding: 0 13px
+  line-height: 38px
+  border: 1px solid #BCBCBC
+  border-radius: 4px
+  text-align: right
+  
+
+.kasu__calc-line 
+  position: relative
+  height: 2px 
+  width: 100%
+  background-color: #BCBCBC
+  margin-bottom: 15px
+  +media-sm 
+    margin-bottom: 0px
+
+.kasu__calc-grab 
+  position: absolute
+  z-index: 2
+  top: -7.5px 
+  left: 115px
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  border: 1px solid #FF3064
+  background-color: #fff
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15)
+  transition: .2s
+.kasu__calc-grab:hover 
+  transform: scale(1.7)
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+
+.kasu__calc-line-colored
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  width: 115px
+  height: 2px 
+  background-color: #FF3064
+
+
+.kasu__calc-limits 
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 20px
+  span 
+    font-weight: 500
+    font-size: 18px
+    line-height: 48px
+    letter-spacing: 2.6px
+    color: #BCBCBC
+  +media-sm 
+    margin-bottom: 10px
+    span 
+      font-size: 14px
+
+.kasu__calc-result
+  margin-bottom: 25px
+
+.kasu__calc-result-head 
+  letter-spacing: 0.2px
+  margin-bottom: 5px
+
+.kasu__calc-result-value
+  display: inline-block
+  font-weight: 600
+  font-size: 45px
+  line-height: 48px
+  letter-spacing: -0.5184px
+  color: #FF3064
+
+.kasu__calc-result-text
+  display: inline-block
+  margin-left: 10px
+  font-weight: 500
+  a 
+    margin-left: 5px
+    display: inline-block
+    vertical-align: middle
+    width: 20px
+    height: 20px
+    background: url('../images/more.jpg') no-repeat center
 
 // ------------------------------- kasu__community  ----------------------------------
 
@@ -168,7 +299,7 @@ body.kasu
   max-width: 1340px
   margin: 0 auto
   padding-left: 28px
-  // overflow-x: hidden
+  overflow-x: hidden
 
 .kasu__community-item
   margin-right: 40px
@@ -182,3 +313,185 @@ body.kasu
   margin: 0 auto
   padding: 0 28px
   max-width: 550px
+
+// ------------------------------- kasu__far  ----------------------------------
+
+.kasu__far 
+  position: relative
+  padding-top: 40px
+  padding-bottom: 30px
+  margin-bottom: 120px
+  +media-sm 
+    padding-top: 24px
+    padding-bottom: 0px
+    margin-bottom: 85px
+
+
+.kasu-line-top::before 
+  content: ''
+  position: absolute
+  width: 980px
+  top: 0px
+  left: 50%
+  transform: translate(-50%, 0)
+  height: 1px
+  background-color: rgba(188, 188, 188, .3)
+  +media-sm 
+    width: 320px
+
+.kasu__far-title
+  margin-bottom: 60px
+  +media-sm 
+    margin-bottom: 20px
+
+.kasu__far-container
+  position: relative
+  max-width: 816px
+  padding: 0 28px 
+  margin: 0 auto
+  &::before 
+    position: absolute
+    z-index: -1
+    content: ''
+    top: 60px
+    left: 40px
+    width: 490px
+    height: 550px
+    background: url('../images/far-bg.png') no-repeat center
+  +media-sm 
+    &::before 
+      display: none
+
+
+.kasu__far-item 
+  position: relative
+  z-index: 1
+  width: 50%
+  border: 1px solid #E7E7E7
+  border-radius: 16px
+  padding: 70px 50px
+  &--1
+    margin-bottom: 30px
+    float: left
+    background: #fff url('../images/far-1.png') no-repeat top 72px right 52px
+  &--2
+    clear: both
+    float: right
+    background: #fff url('../images/far-2.png') no-repeat top 72px right 68px
+  +media-sm 
+    width: 100%
+    float: none
+    padding: 40px 24px 60px
+    &--1
+      margin-bottom: 24px
+      background-position: top 35px right 30px
+    &--2
+      background-position: top 35px right 21px
+    
+
+
+.kasu__far-number
+  font-weight: 600
+  font-size: 42px
+  line-height: 48px
+  letter-spacing: -0.5184px
+  color: #FF3064
+  margin-bottom: 12px
+  +media-sm 
+    font-size: 38px
+
+.kasu__far-text
+  font-size: 18px
+  line-height: 24px
+  letter-spacing: 0.2px
+  +media-sm 
+    font-size: 16px
+    line-height: 24px
+
+// ------------------------------- kasu__featured  ----------------------------------
+
+.kasu__featured
+  position: relative
+  padding-top: 40px
+  margin-bottom: 120px
+  +media-sm 
+    padding-top: 24px
+    margin-bottom: 80px
+
+.kasu__featured-title 
+  margin-bottom: 40px
+
+.kasu__featured-img
+  text-align: center
+  margin-bottom: 51px
+  img 
+    margin: 0 auto
+  +media-sm 
+   margin-bottom: 45px
+   img 
+     width: 158px
+
+.kasu__featured-btn
+  margin: 0 auto
+  padding: 0 28px
+  max-width: 417px
+
+// ------------------------------- kasu__logo-bottom  ----------------------------------
+
+.kasu__logo-bottom
+  width: 185px 
+  margin: 0 auto 
+  margin-bottom: 35px
+  img 
+    display: block
+    width: 100%
+  +media-sm 
+    width: 133px 
+    margin-bottom: 19px
+
+// ------------------------------- kasu__footer  ----------------------------------
+
+.kasu__footer
+  padding-top: 25px
+  padding-bottom: 50px
+  font-weight: 500
+  font-size: 18px
+  line-height: 22px
+  color: #FFFFFF
+  background-color: #FF3568
+  a 
+    color: #FFFFFF
+  +media-sm 
+    padding-top: 20px
+    padding-bottom: 40px
+    font-weight: 400
+    font-size: 16px
+
+.kasu__footer-container
+  max-width: 1080px 
+  padding: 0 15px 
+  margin: 0 auto
+  ul 
+    list-style: none 
+    margin: 0 
+    padding: 0
+    margin-bottom: 35px
+    display: flex 
+    justify-content: space-between
+  li:nth-child(2)
+    margin-left: 100px
+  +media-sm
+    ul
+      flex-direction: column
+      align-items: center
+      margin-bottom: 0px 
+    li 
+      margin-bottom: 15px
+    li:nth-child(2)
+      margin-left: 0
+
+.kasu__footer-copy 
+  text-align: center
+  +media-sm 
+    font-weight: 600
+    font-size: 14px
