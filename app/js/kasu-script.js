@@ -10,10 +10,8 @@ $(document).ready(function () {
 			}
 		}
   });
+
   mySwiper.slideTo(1, 0, false);
 
-  new WOW().init();
-
-  
 });
 
