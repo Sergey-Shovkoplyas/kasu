@@ -154,19 +154,17 @@
                 </div>
               </div>
 
-              <div class="kasu__calc">
+              <form action="#" class="kasu__calc">
                 <div class="kasu-title kasu__calc-title">Get sponsored monthly</div>
                 <div class="kasu__calc-subtitle">Reward loyal fans with access to your most exclusive content.</div>
 
                 <div class="kasu__calc-item">
                   <div class="kasu__calc-head">
-                    <div class="kasu__calc-name">Monthly sponsorship</div>
-                    <div class="kasu__calc-value">$7</div>
+                    <div class="label1 kasu__calc-name">Monthly sponsorship</div>
+                    <div class="kasu__calc-value">$<input  type="number" id="input1" min="5" max="50"></input></div>
                   </div>
-                  <div class="kasu__calc-line">
-                    <div class="kasu__calc-grab"></div>
-                    <div class="kasu__calc-line-colored"></div>
-                  </div>
+                  <input id="field1" name="field1" type="range" min="0" max="50" value="10" data-rangeslider>
+                  
                   <div class="kasu__calc-limits">
                     <span>0</span>
                     <span>$50</span>
@@ -175,28 +173,27 @@
 
                 <div class="kasu__calc-item">
                   <div class="kasu__calc-head">
-                    <div class="kasu__calc-name">Number of followers</div>
-                    <div class="kasu__calc-value">700</div>
+                    <div class="label2 kasu__calc-name">Number of followers</div>
+                    <input class="kasu__calc-value" type="number" id="input2" min="100" max="50000"></input>
                   </div>
-                  <div class="kasu__calc-line">
-                    <div class="kasu__calc-grab"></div>
-                    <div class="kasu__calc-line-colored"></div>
-                  </div>
+                  <input id="field2" name="field2" type="range" min="100" max="50000" value="10000" data-rangeslider>
+                  
                   <div class="kasu__calc-limits">
                     <span>100</span>
                     <span>50k</span>
                   </div>
                 </div>
 
+            
                 <div class="kasu__calc-result">
                   <div class="kasu__calc-result-head">You could be earning</div>
-                  <div class="kasu__calc-result-value">$4,400</div>
+                  <div class="kasu__calc-result-value" id="sum">$4,400</div>
                   <div class="kasu__calc-result-text">per month <a href="#"></a></div>
                 </div>
 
                 <button class="kasu-button" type="button">Get started</button>
 
-              </div>
+              </form>
 
               <div class="kasu__community">
                 <div class="kasu-title kasu__community-title">Join the kasu.io<span>/</span> community</div>
@@ -383,6 +380,7 @@
     <link rel="stylesheet" href="styles/noscript.css"></noscript>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.js'></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/kasu-script.js"></script>
 
