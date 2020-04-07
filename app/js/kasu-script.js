@@ -68,7 +68,7 @@ $(document).ready(function () {
     // Change the value of input field when slider changes
     $('#field2').on('input', function() {
         $('#input2').val(this.value);
-        console.log('$'+$('#input2').val());
+
         settlement();
     });
     // Change the value of slider field when input changes
